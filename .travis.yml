@@ -1,0 +1,7 @@
+language: go
+go:
+    - 1.7.x
+install:
+    - go install github.com/goadesign/goa/goagen
+script:
+    - make
