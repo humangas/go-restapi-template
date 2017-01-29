@@ -29,7 +29,7 @@ cd $GOPATH/src/<new_repository_name>
 Repeat the following procedure.
 
 1. Desing
-1. Build
+1. Build & Serve
 1. Testing
 
 ## Design 
@@ -39,7 +39,7 @@ See also: [The goa API Design Language](https://goa.design/design/overview/)
 $ vim design/design.go
 ```
 
-## Build
+## Build & Serve
 See also: [Makefile](https://github.com/humangas/template-restapi/blob/master/Makefile)
 
 ```
