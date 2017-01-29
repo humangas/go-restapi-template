@@ -20,7 +20,14 @@ $ cd $GOPATH/src/<new_repository_name>
 
 
 # Development 
+
+Move to project repository
+```
+cd $GOPATH/src/<new_repository_name>
+```
+
 Repeat the following procedure.
+
 1. Desing
 1. Build
 1. Testing
