@@ -11,6 +11,11 @@ all:
 	@make bootstrap 
 	@make serve 
 
+.PHONY: test
+test:
+	@make cleanall
+	@make bootstrap 
+
 .PHONY: bootstrap
 bootstrap:
 	goagen bootstrap -d $(DESIGN_PATH)
