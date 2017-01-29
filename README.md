@@ -1,6 +1,6 @@
 # template-restapi
 [![Build Status](https://travis-ci.org/humangas/template-restapi.svg?branch=master)](https://travis-ci.org/humangas/template-restapi)  
-Template repository for creating RESTful API server with go(goa).
+Template repository for creating RESTful API server with go(use: [goa](https://goa.design/)).
 
 # Installation
 1. Install goa
