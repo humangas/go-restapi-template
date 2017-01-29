@@ -13,9 +13,23 @@ $ go get -u github.com/goadesign/goa/...
 
 ## Install this template repository
 ```
-$ git clone git@github.com:humangas/template-restapi.git
+$ ghq get git@github.com:humangas/template-restapi.git
 $ mv $GOPATH/src/template-restapi $GOPATH/src/<new_repository_name>
 $ cd $GOPATH/src/<new_repository_name>
+```
+
+what's [ghq](https://github.com/motemen/ghq#ghq1-)?
+
+Or
+
+```
+$ git clone git@github.com:humangas/template-restapi.git $GOPATH/src/<new_repository_name>
+$ cd $GOPATH/src/<new_repository_name>
+```
+
+```
+$ vim Makefile
+# Please change BASE_PATH to relative path from $GOPATH/src.
 ```
 
 
@@ -66,7 +80,6 @@ $ go run tool/template-ad-cli/main.go show users api/v1/users/1
 ```
 
 ### Postman
-It is also useful to use a test tool such as postman.
-- [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=ja)
+It is also useful to use a test tool such as [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=ja).
 
 ![](postman.png)
