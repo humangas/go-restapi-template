@@ -6,38 +6,23 @@ Template repository for creating RESTful API server with go(use: [goa](https://g
 1. Install goa
 1. Install this repository
 
-## Install goa
+## Install [goa](https://goa.design/)
 ```
 $ go get -u github.com/goadesign/goa/...
 ```
 
 ## Install this template repository
 ```
-$ ghq get git@github.com:humangas/template-restapi.git
-$ mv $GOPATH/src/template-restapi $GOPATH/src/<new_repository_name>
-$ cd $GOPATH/src/<new_repository_name>
-```
-
-what's [ghq](https://github.com/motemen/ghq#ghq1-)?
-
-Or
-
-```
-$ git clone git@github.com:humangas/template-restapi.git $GOPATH/src/<new_repository_name>
-$ cd $GOPATH/src/<new_repository_name>
-```
-
-```
-$ vim Makefile
-# Please change BASE_PATH to relative path from $GOPATH/src.
+$ git clone git@github.com:humangas/template-restapi.git $GOPATH/src/<remote_git_service>/<your_account>/<new_repository_name>
+# e.g. $ git clone git@github.com:humangas/template-restapi.git $GOPATH/src/github.com/humangas/test-restapi
 ```
 
 
 # Development 
-
 Move to project repository
+
 ```
-cd $GOPATH/src/<new_repository_name>
+$ cd $GOPATH/src/<remote_git_service>/<your_account>/<new_repository_name>
 ```
 
 Repeat the following procedure.

@@ -2,7 +2,7 @@
 # goa: https://goa.design/ 
 
 # For the design path, specify relative path from $GOPATH/src/
-BASE_PATH=github.com/humangas/template-restapi
+BASE_PATH=$(subst $(GOPATH)/src/,,$(PWD))
 DESIGN_PATH=$(BASE_PATH)/design
 
 .PHONY: all
@@ -38,12 +38,12 @@ serve:
 
 .PHONY: clean 
 clean:
-	rm -rf $(GOPATH)/src/$(BASE_PATH)/app
-	rm -rf $(GOPATH)/src/$(BASE_PATH)/tool
-	rm -rf $(GOPATH)/src/$(BASE_PATH)/client
-	rm -rf $(GOPATH)/src/$(BASE_PATH)/swagger
+	rm -rf $(PWD)/app
+	rm -rf $(PWD)/tool
+	rm -rf $(PWD)/client
+	rm -rf $(PWD)/swagger
 
 .PHONY: cleanall
 cleanall:
 	@make clean
-	rm -rf $(GOPATH)/src/$(BASE_PATH)/*.go
+	rm -rf $(PWD)/*.go
