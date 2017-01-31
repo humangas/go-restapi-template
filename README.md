@@ -15,6 +15,8 @@ $ go get -u github.com/goadesign/goa/...
 ```
 $ git clone git@github.com:humangas/template-restapi.git $GOPATH/src/<remote_git_service>/<your_account>/<new_repository_name>
 # e.g. $ git clone git@github.com:humangas/template-restapi.git $GOPATH/src/github.com/humangas/test-restapi
+$ cd $_
+$ rm -rf .git
 ```
 
 
